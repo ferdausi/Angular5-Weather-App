@@ -1,10 +1,9 @@
 <div class="row align-items-center justify-content-center text-center">
-  <div class="col-md-4">
+  <div class="col-md-4 m-3">
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-      <div class="form-group form-inline">
-        <label for="city">City</label>
-        <input type="text" id="city" class="form-control" name="city" ngModel required>
-        <button type="submit" class="btn btn-info">Add City</button>
+      <div class="form-group d-inline-flex">
+        <input type="text" id="city" class="form-control mr-2" name="city" placeholder="Enter City name" ngModel required>
+        <button type="submit" class="btn btn-dark">Add City</button>
       </div>
     </form>
     <div>

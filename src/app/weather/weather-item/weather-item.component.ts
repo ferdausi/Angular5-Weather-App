@@ -7,6 +7,7 @@ import {WeatherItem} from '../weather-item';
   styleUrls: ['./weather-item.component.css']
 })
 export class WeatherItemComponent implements OnInit {
+  closed = false;
   @Input() weatherItem: WeatherItem;
   constructor() {
   }
