@@ -2,12 +2,13 @@
   <div class="col-md-4 m-3">
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
       <div class="form-group d-inline-flex">
-        <input type="text" id="city" class="form-control mr-2" name="city" placeholder="Enter City name" ngModel required>
+        <input type="text" id="city" class="form-control mr-2" name="city"
+               placeholder="Enter City name" ngModel (input)="onSearchLocation(input.value)" #input required>
         <button type="submit" class="btn btn-dark">Add City</button>
       </div>
     </form>
     <div>
-      <span class="info">City found:</span>
+      <b class="">City found:</b>{{ data.name }}
     </div>
   </div>
 </div>
